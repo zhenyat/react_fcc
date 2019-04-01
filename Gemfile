@@ -71,6 +71,7 @@ gem 'uglifier'                                  # Use Uglifier as compressor for
 gem 'webpacker'                                 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'react-rails'                              # https://rubygems.org/gems/react-rails/versions/1.7.1
 #gem 'react_on_rails'
+gem 'foreman'
 
 #gem 'therubyracer', platforms: :ruby           # Call JavaScript code and manipulate JavaScript objects from Ruby.
                                                 # Call Ruby code and manipulate Ruby objects from JavaScript.
