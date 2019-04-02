@@ -7,7 +7,6 @@ const CurrentDate = (props) => {
       <p>The current date is: {props.date}</p>
     </React.Fragment>
   );
-
 };
 
 export default class Calendar extends React.Component {
