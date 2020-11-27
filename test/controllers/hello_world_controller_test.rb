@@ -1,16 +1,13 @@
 require 'test_helper'
 
-#class HelloWorldControllerTest < ActionDispatch::IntegrationTest
-#  test "should get index" do
-#    get hello_world_index_url
-#    assert_response :success
-#  end
-#
-#end
-
 # See:  https://www.rubydoc.info/gems/react-rails/2.5.0
 
 class HelloWorldControllerTest < ActionDispatch::IntegrationTest
+    test "should get index" do
+    get hello_world_index_url
+    assert_response :success
+  end
+
   test 'assert_react_component' do
     get "/hello_world/index.html"
     assert_equal 200, response.status

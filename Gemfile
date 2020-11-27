@@ -50,13 +50,14 @@
 #               Gems versions updated
 #               Not used: coffee-rails, jquery-rails
 #   01.04.2019  Switch: react_on_rails' |  'react-rails'
+#   12.09.2019  Rails 6.0.0 / Ruby 2.6.4
 ################################################################################
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.6.2'
+ruby '2.7.2'
 
-gem 'rails', '~> 6.0.0.beta3'                   # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem 'rails', '~> 6.0.3.4'                   # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 
 gem 'sqlite3'                                   # Use sqlite3    as the database for Active Record
 #gem 'sqlite3', groups: [:test, :development]
@@ -118,7 +119,7 @@ gem 'mini_magick'                               # Use ActiveStorage variant http
 
 #gem 'redis'                                    # Use Redis adapter to run Action Cable in production
 
-gem 'bootsnap', '>= 1.4.1', require: false      # Reduces boot times through caching; required in config/boot.rb
+gem 'bootsnap', require: false      # Reduces boot times through caching; required in config/boot.rb
 
 # MH 3-rd Edition
 gem 'faker'
@@ -140,14 +141,14 @@ group :development, :test do
 end
 
 group :development do
-  gem 'web-console', '>= 3.3.0'           # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'listen', '>= 3.0.5', '< 3.2'       # https://github.com/guard/listen
+  gem 'web-console'           # Access an IRB console on exception pages or by using <%= console %> in views
+  gem 'listen'       # https://github.com/guard/listen
   gem 'spring'                            # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring-watcher-listen', '~> 2.0.0' # Makes spring watch files using the listen gem.
+  gem 'spring-watcher-listen' # Makes spring watch files using the listen gem.
 end
 
 group :test do
-  gem 'capybara', '>= 2.15', '< 4.0' # Adds support for Capybara system testing and selenium driver
+  gem 'capybara' # Adds support for Capybara system testing and selenium driver
   gem 'selenium-webdriver'
   gem 'minitest-reporters'
   gem 'mini_backtrace'
